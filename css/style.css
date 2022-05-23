@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-width: 290px;
+}
+
+header {
+  cursor: pointer;
+}
+
+.navigation {
+  position: fixed;
+  min-width: 20vw;
+  top: 0px;
+  left: 0px;
+  width: 23vw;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+nav {
+  overflow-y: auto;
+}
+.data-type{
+  color: red;
+}
+
+#navbar {
+  padding: 1.5em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+
+#navbar header {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#navbar li {
+  list-style: none;
+  padding-top: 1em;
+  font-size: 1em;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #0e0d0d;
+}
+
+#navbar ul {
+  font-size: 1em;
+}
+
+#navbar li ul {
+  display: none;
+  position: relative;
+  width: inherit;
+  text-align: left;
+  padding-left: 50px;
+}
+
+#navbar li:hover ul {
+  display: block;
+}
+
+.main-text {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+#main-doc {
+  padding-left: 1.2em;
+  margin: 1em;
+  line-height: 2;
+}
+
+#main-doc header {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+#main-doc h2 {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+#main-doc p {
+  margin: 1em;
+}
+
+#main-doc li {
+  margin-left: 3em;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .presentation {
+    width: 100%;
+  }
+  .main-text {
+    margin-left: -2em;
+  }
+  .navigation {
+    position: relative;
+    border-right: none;
+    width: 100vw;
+    display: flex;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0em;
+    padding-left: .5em;
+  }
+}

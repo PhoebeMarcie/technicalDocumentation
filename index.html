@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript Documentation.</title>
+</head>
+<body>
+    <div class="presentation">
+        <div class="navigation">
+            <nav id="navbar">
+                <header id="nav-header">
+                    Javascript Documentation
+                </header>
+                <ul class="nav-links">
+                    <li><a href="#Introduction" class="nav-link">Introduction</a>
+                        <ul class="sub-list">
+                            <li><a href="#Prerequisites" class="sub-nav-link">Prerequisites</a></li>
+                            <li><a href="#What_Is_JavaScript" class="sub-nav-link">What Is Javascript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Getting_Started_With_JS" class="nav-link">Getting Started With JS</a>
+                    <ul class="sub-list">
+                        <li><a href="#Hello_World" class="sub-nav-link">Hello World</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="#Grammar_&_Types" class="nav-link">Grammar & Types</a>
+                        <ul class="sub-list">
+                            <li><a href="#Basics" class="sub-nav-link">Basics</a></li>
+                            <li><a href="#Comments" class="sub-nav-link">Comments</a></li>
+                            <li><a href="#Declaring_Variables" class="sub-nav-link">Declaring Variables</a></li>
+                            <li><a href="#Evaluating_Variables_&_Evaluating_Scopes" class="sub-nav-link">Evaluating Variables & Evaluating Scopes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Datastructures_&_Types" class="nav-link">Datastructures & Types</a>
+                        <ul class="sub-list">
+                            <li><a href="#Datatypes" class="sub-nav-link">Datatypes</a></li>
+                            <li><a href="#Type_Conversion" class="sub-nav-link">Type Conversion</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="#Control_Flow_&_Error_Handling" class="nav-link">Control Flow & Error Handling</a>
+                    <ul class="sub-list">
+                        <li><a href="#Block_Statements" class="sub-nav-link">Block Statements</a></li>
+                        <li><a href="#Conditional_Statements" class="sub-nav-link">Conditional Statements</a></li>
+                    </ul>
+                    
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="main-text">
+            <main id="main-doc">
+                <section class="main-section" id="Introduction">
+                    <header class="section-header" >
+                        Introduction
+                    </header>
+                    <h2 class="sub-heading" id="Prerequisites">
+                        Prerequisites
+                    </h2>
+                    <p>This guide assumes you have the following basic background:
+                        <ul>
+                            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                            <li>Some programming experience. </li>
+                        </ul>
+                    </p>
+                    <h2 class="sub-heading" id="What_Is_Javascript">
+                        What Is Javascript?
+                    </h2>
+                    <p>JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server 
+                        side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be 
+                        connected to the objects of its environment to provide programmatic control over them.</p>
+    
+                        <p>
+                            JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety
+                             of purposes by supplementing it with additional objects; for example: <br>
+                             <ul>
+                                 <li>
+                                    Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM).
+                                 </li>
+                                 <li>
+                                    Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. 
+                                 </li>
+                             </ul>
+                        </p>
+                </section>
+                <section class="main-section" id="Getting_Started_With_JS">
+                    <header class="section-header" >
+                        Getting Started With JS
+                    </header>
+                    <p>
+                        Getting started with JavaScript is easy: all you need is a modern Web browser
+                    </p>
+                    <h2 class="sub-heading" id="Hello_World">
+                        Hello World
+                    </h2>
+                    <p>
+                        Write your first "Hello world" JavaScript code:  <br>
+                        <code>
+                            (function(){ <br>
+                                "use strict"; <br>
+                                <span class="comment">/* Start of your code */</span><br>
+                                function greetMe(yourName) {<br>
+                                  alert('Hello ' + yourName);<br>
+                                } <br>
+                              
+                                greetMe('World'); <br>
+                                <span class="comment">/* End of your code */</span> <br>
+                              })(); <br>
+                              
+                        </code>
+                    </p>
+                </section>
+                <section class="main-section" id="Grammar_&_Types">
+                    <header  class="section-header">
+                        Grammar & Types
+                    </header>
+                    <h2 class="sub-heading" id="Basics">
+                        Basics
+                    </h2>
+                    <p>
+                        JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.
+                        JavaScript is case-sensitive and uses the Unicode character set. 
+                    </p>
+                    <p>
+                        In JavaScript, instructions are called <strong>statements </strong> are separated by semicolons (;).
+                    </p>
+                    <p>
+                        The source text of JavaScript script gets scanned from left to right, and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments, or whitespace. (Spaces, tabs, and newline characters are considered whitespace.)
+                    </p>
+    
+                    <h2 class="sub-heading" id="Comments">Comments</h2>
+                    <p>
+                        The syntax of comments is the same as in C++ and in many other languages: <br>
+    
+                        <code>
+                            // a one line comment <br>
+    
+    
+    /* this is a longer, <br>
+     * multi-line comment <br>
+     */ <br>
+    
+    /* You can't, however, /* nest comments */ SyntaxError */ <br>
+    
+                        </code>
+                    </p>
+                    <h2 class="sub-heading" id="Declaring_Variables">
+                        Declaring Variables
+                    </h2>
+                    <p>
+                        You can declare a variable in two ways:
+    
+                        <ul>
+                            <li>
+                                With the keyword <code>var</code>. For example, <br> <code>var x = 42</code> . <br>
+                                 This syntax can be used to declare both local and global variables, depending on the execution context.
+                            </li>
+                            <li>
+                                With the keyword <code>const</code> or <code>let</code>. <br> For example,  <code>let y = 13.</code> <br>
+                                This syntax can be used to declare a block-scope local variable. 
+                            </li>
+                        </ul>
+                    </p>
+                    
+                </section>
+                <section class="main-section" id="Datastructures_&_Types">
+                    <header  class="section-header">
+                        Datastructures & Types
+                    </header>
+                    <h2 class="sub-heading" id="Datatypes">Datatypes</h2>
+                    <p>
+                        The latest ECMAScript standard defines eight data types:
+                        <ul>
+                            <li>Seven data types that are <span class="data-type">primitives</span> :
+                                <ol>
+                                    <li> <span class="data-type">Boolean.</span> true and false.</li>
+                                    <li><span class="data-type">null.</span> A special keyword denoting a null value. (Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.)</li>
+                                    <li><span class="data-type">undefined.</span> A top-level property whose value is not defined.</li>
+                                    <li><span class="data-type">Number.</span> An integer or floating point number. For example: 42 or 3.14159</li>
+                                    <li><span class="data-type">BigInt. </span> An integer with arbitrary precision. For example: 9007199254740992n.</li>
+                                    <li><span class="data-type">String. </span> A sequence of characters that represent a text value. For example: "Howdy"</li>
+                                    <li><span class="data-type">Symbol</span> (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+                                </ol>
+                            </li>
+                            <li>and <span class="data-type">Object</span></li>
+                            
+                        </ul>
+                        
+                      
+                    </p>
+                    <h2 class="sub-heading" id="Type_Conversion">Type Conversion</h2>
+                    <p>
+                        JavaScript is a dynamically typed language. This means you don't have to specify the data type of a variable when you declare it. It also means that data types are automatically 
+                        converted as-needed during script execution.
+                    </p>
+                    <p>
+                        So, for example, you could define a variable as follows: <br>
+                        <code>
+                            var answer = 42;
+    
+                        </code>
+                    </p>
+                    <p>
+                        And later, you could assign the same variable a string value, for example: <br>
+                        <code>
+                            answer = 'Thanks for all the fish...';
+    
+                        </code>
+                    </p>
+                    <h3>
+                        Numbers and the '+' operator
+                    </h3>
+                    <p>
+                        In expressions involving numeric and string values with the + operator, JavaScript converts numeric values to strings. For example, consider the following statements: <br>
+                        <code>
+                            x = 'The answer is ' + 42 // "The answer is 42" <br>
+                            y = 42 + ' is the answer' // "42 is the answer" <br>
+    
+                        </code>
+                    </p>
+                    <p>
+                        With all other operators, JavaScript does not convert numeric values to strings. For example: <br>
+                        <code>
+                            '37' - 7 // 30 <br>
+    '37' + 7 // "377" <br>
+                        </code>
+                    </p>
+                    <h3>
+                        Converting strings to numbers
+                    </h3>
+                    <p>
+                        In the case that a value representing a number is in memory as a string, there are methods for conversion.
+                        <ul>
+                            <li>parseInt()</li>
+                            <li>parseFloat()</li>
+                        </ul>
+                    </p>
+                </section>
+                <section class="main-section" id="Control_Flow_&_Error_Handling">
+                    <header  class="section-header">
+                        Control Flow & Error Handling
+                    </header>
+                        <p>JavaScript supports a compact set of statements, specifically control flow statements, 
+                        that you can use to incorporate a great deal of interactivity in your application.</p>
+    
+                        <h2 class="sub-heading" id="Block_Statements">Block Statements</h2>
+                        <p>
+                            The most basic statement is a block statement, which is used to group statements. 
+                            The block is delimited by a pair of curly brackets: <br>
+    
+                            <code>
+                                { <br>
+                                    statement_1; <br>
+                                    statement_2; <br>
+                                    ⋮ <br>
+                                    statement_n; <br>
+                                  } <br>
+                                  
+                            </code>
+    
+                            
+                        </p>
+                        <p>Block statements are commonly used with control flow statements ( <code>if, for, while</code>). <br>
+                            <code>
+                                while (x < 10) { <br>
+                                    x++; <br>
+                                  } <br>
+                            </code>
+                        </p>
+                        <h2 class="sub-heading" id="Conditional_Statements">  Conditional Statements</h2>
+                        <p>
+                            A conditional statement is a set of commands that executes if a specified condition is true. JavaScript supports two conditional statements: <code>if...else</code> and <code>switch</code>.
+                        </p>
+                        <p>
+                            An <code>if</code> statement looks like this: 
+                        
+                        </p>
+                        <p>
+                            <code>
+                                if (condition) { <br>
+                                    statement_1; <br>
+                                  } else { <br>
+                                    statement_2; <br>
+                                  } <br>
+                                  
+                            </code>
+                        </p>
+                </section>
+            </main>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
